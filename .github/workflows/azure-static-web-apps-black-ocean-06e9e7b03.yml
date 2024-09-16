@@ -31,6 +31,8 @@ jobs:
 
       - name: Build
         run: npm run build
+        env:
+          ENTITY_API_URL: ${{ secrets.ENTITY_API_URL }}
         
       - name: Build And Deploy
         id: builddeploy
