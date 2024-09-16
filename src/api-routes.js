@@ -1,3 +1,6 @@
+const entityApiUrl = process.env.ENTITY_API_URL;
+
+
 export const EntityApiRoutes = {
   GENERAL_INFORMATION: "/entity/entity_id/company_information",
   REGISTER_ADDRESS: "/entity/entity_id/register_address",
@@ -17,7 +20,7 @@ export const SettingsApiRoutes = {
 
 export const MyEntitiesDashboardApiRoutes = {
   COUNTRIES: "/api/entity/myentities/countries",
-  ALL_ENTITIES: "https://az-function-app-test1.azurewebsites.net/gxm/entity/fetchentities?code=LJmz-ek_UtgUoPP2HeHul4ffcOaax8Yn6jrRkbqGR2DIAzFug4106Q%3D%3D",
+  ALL_ENTITIES: entityApiUrl+"/fetchentities?code=LJmz-ek_UtgUoPP2HeHul4ffcOaax8Yn6jrRkbqGR2DIAzFug4106Q%3D%3D",
   DOWNLOAD_REPORT: "/api/entity/myentities/download_report",
   LAST_MONTH_REPORT: "/api/entity/myentities/lastmonthReport",
 };
