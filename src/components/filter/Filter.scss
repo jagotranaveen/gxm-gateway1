@@ -1,0 +1,133 @@
+.generic-dropdown {
+  display: inline-block;
+  position: relative;
+
+  .dropdown-toggle {
+    align-items: center;
+    background: #fff;
+    border: 1px solid #188a42;
+    border-radius: 6px;
+    color: #1f2937;
+    cursor: pointer;
+    display: flex;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    height: 48px;
+    justify-content: center;
+    line-height: normal;
+    padding: 12px 20px;
+
+    &:hover {
+      background: #e4f2e9;
+    }
+  }
+
+  .dropdown-container {
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    left: 0;
+    line-height: normal;
+    padding-top: 10.5px;
+    position: absolute;
+    top: 100%;
+    z-index: 1000;
+
+    .dropdown-menu {
+      background: #fff;
+      border-radius: 6px;
+      box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      padding-top: 10.5px;
+      width: 216px;
+
+      .dropdown-item {
+        background: rgb(255 255 255 / 0%);
+        border: 0.001px solid rgb(0 0 0 / 0%);
+        cursor: pointer;
+        padding: 12px 20px;
+        position: relative;
+        width: 100%;
+
+        &:hover {
+          background-color: #f0f0f0;
+        }
+
+        &.has-submenu {
+          align-items: center;
+          display: flex;
+          justify-content: space-between;
+        }
+
+        &.selected-option{
+          background-color: #EFF6FF;
+          color: #136C34;
+        }
+
+        .submenu-arrow {
+          margin-left: auto;
+        }
+      }
+    }
+
+    .submenu-container {
+      background: #fff;
+      background-color: #fff;
+      border-radius: 6px;
+      box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+      left: 100%;
+      padding-top: 10.5px;
+      position: absolute;
+      top: 10.5px;
+      width: 216px;
+      
+      .submenu {
+        list-style: none;
+        margin:0;
+        padding: 0;
+
+        .submenu-item {
+          cursor: pointer;
+          padding: 12px 20px;
+
+          &:hover {
+            background-color: #f0f0f0;
+          }
+
+          label {
+            align-items: center;
+            display: flex;
+
+            input[type="checkbox"] {
+              appearance: none;
+              border: 2px solid #D1D5DB;
+              border-radius: 6px;
+              cursor: pointer;
+              flex-shrink: 0;
+              height: 24px;
+              margin: 0;
+              margin-right: 8px;
+              position: relative;
+              width: 22px;
+          }
+
+          input[type="checkbox"]:checked { 
+            background-color: #188A42;
+            background-image: url('../../assets/images/check.svg');
+            background-position: center; 
+            background-repeat: no-repeat;
+            border-color: #188A42;
+        }
+
+          span {
+            flex-grow: 1;
+          }
+          }
+        }
+      }
+    }
+  }
+}

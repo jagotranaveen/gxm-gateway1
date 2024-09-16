@@ -1,0 +1,58 @@
+@import '../../styles/mixins';
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-semibold: 500;
+$font-weight-bold: 600;
+$font-weight-bolder: 700;
+
+$font-size-regular: 16px;
+$font-size-small: 20px;
+$font-size-medium: 24px;
+$font-size-large: 28px;
+
+.prv-button {
+  align-items: center;
+  background-color: var(--lara-light-root-surface-section);
+  border: 1px solid var(--lara-light-green-700);
+  border-radius: 6px;
+  color: var(--lara-light-global-shade-900);
+  cursor: pointer;
+  display: flex;
+  font-size: $font-size-regular;
+  font-weight: $font-weight-bolder;
+  height: 35px;
+  justify-content: center;
+  outline: none;
+  padding: 12px 20px;
+
+  &:hover {
+    background-color: var(
+      --lara-light-button-success-outlined-active-background
+    );
+  }
+}
+.card-onboard {
+  padding: 10px 30px !important;
+  width: 100% !important;
+}
+.submit-btn {
+  align-items: center;
+  background-color: var(--lara-light-green-700);
+  border: 1px solid var(--lara-light-green-700);
+  border-radius: 6px;
+  color: var(--lara-light-root-surface-section);
+  cursor: pointer;
+  display: flex;
+  font-size: $font-size-regular;
+  font-style: normal;
+  font-weight: $font-weight-bolder;
+  height: 35px;
+  justify-content: center;
+  line-height: normal;
+  padding: 12px 20px;
+
+  &:hover {
+    background-color: var(--lara-light-green-600);
+  }
+}

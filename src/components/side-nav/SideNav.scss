@@ -1,0 +1,68 @@
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-semibold: 500;
+$font-weight-bold: 600;
+$font-weight-bolder: 700;
+
+$font-size-regular: 16px;
+$font-size-small: 20px;
+$font-size-medium: 24px;
+$font-size-large: 28px;
+$font-primary: "Inter", sans-serif;
+
+.p-panelmenu {
+  box-sizing: border-box;
+  height: 100vh;
+
+  .p-panelmenu-header-content {
+    border: none;
+  }
+
+  .p-panelmenu-content {
+    border: none;
+  }
+}
+
+.link {
+  background-color: #fff;
+  color: #4b5563;
+  text-decoration: none;
+
+  &.active {
+    background-color: #b0e4c3;
+    border-radius: 4px;
+    font-weight: 700;
+  }
+
+  &.inactive:hover {
+    background-color: rgb(176 228 195 / 30%);
+    border-radius: 4px;
+  }
+}
+
+.logo-display {
+  display: none;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-name {
+  color: #000;
+  font-size: $font-size-regular;
+  font-style: normal;
+  font-weight: $font-weight-bold;
+  line-height: 120%;
+  margin: 0;
+}
+
+.profile-email {
+  color: #000;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: $font-weight-regular;
+  line-height: 120%;
+  margin: 0;
+}

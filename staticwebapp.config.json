@@ -1,0 +1,9 @@
+{
+
+  "routes": [
+    {
+      "route": "/api/*",
+      "rewrite": "https://az-function-app-test1.azurewebsites.net/gxm/api/*"
+    }
+  ]
+}
