@@ -20,7 +20,8 @@ export const SettingsApiRoutes = {
 
 export const MyEntitiesDashboardApiRoutes = {
   COUNTRIES: "/api/entity/myentities/countries",
-  ALL_ENTITIES: entityApiUrl+"/fetchentities?code=LJmz-ek_UtgUoPP2HeHul4ffcOaax8Yn6jrRkbqGR2DIAzFug4106Q%3D%3D",
+  ALL_ENTITIES: process.env.ENTITY_API_URL;,
+  ALL_ENTITIES1: entityApiUrl+"/fetchentities?code=LJmz-ek_UtgUoPP2HeHul4ffcOaax8Yn6jrRkbqGR2DIAzFug4106Q%3D%3D",
   DOWNLOAD_REPORT: "/api/entity/myentities/download_report",
   LAST_MONTH_REPORT: "/api/entity/myentities/lastmonthReport",
 };
