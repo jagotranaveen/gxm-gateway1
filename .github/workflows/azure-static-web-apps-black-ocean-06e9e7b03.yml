@@ -30,9 +30,7 @@ jobs:
         run: yarn install
 
       - name: Build
-        run: |
-          echo "REACT_APP_ENTITY_API_URL=${{ secrets.REACT_APP_ENTITY_API_URL }}" >> .env
-          npm run build
+        run: npm run build
         
       - name: Build And Deploy
         id: builddeploy
