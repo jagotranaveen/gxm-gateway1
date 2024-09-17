@@ -1,5 +1,5 @@
 const apiUrl = process.env.REACT_APP_ENTITY_API_URL;
-console.log(apiUrl); // This will log the URL provided by the GitHub Secret
+
 
 
 export const EntityApiRoutes = {
