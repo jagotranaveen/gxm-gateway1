@@ -1,6 +1,3 @@
-const apiUrl = process.env.REACT_APP_ENTITY_API_URL;
-
-
 
 export const EntityApiRoutes = {
   GENERAL_INFORMATION: "/entity/entity_id/company_information",
@@ -21,8 +18,7 @@ export const SettingsApiRoutes = {
 
 export const MyEntitiesDashboardApiRoutes = {
   COUNTRIES: "/api/entity/myentities/countries",
-  ALL_ENTITIES: process.env.REACT_APP_ENTITY_API_URL,
-  ALL_ENTITIES1: entityApiUrl+"/fetchentities?code=LJmz-ek_UtgUoPP2HeHul4ffcOaax8Yn6jrRkbqGR2DIAzFug4106Q%3D%3D",
+  ALL_ENTITIES1: "/fetchentities?code=LJmz-ek_UtgUoPP2HeHul4ffcOaax8Yn6jrRkbqGR2DIAzFug4106Q%3D%3D",
   DOWNLOAD_REPORT: "/api/entity/myentities/download_report",
   LAST_MONTH_REPORT: "/api/entity/myentities/lastmonthReport",
 };
