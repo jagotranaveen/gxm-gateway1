@@ -1,6 +1,6 @@
 import { WorkOS } from '@workos-inc/node';
 
-const workos = new WorkOS('YOUR_WORKOS_API_KEY');
+const workos = new WorkOS('sk_test_a2V5XzAxSjc4V1ZWSEJHMVNaVlk3V0JaQ0c3UzFKLHY2eGQ2d2I2TWxsYkVwUUdVcVZaT05DRHE');
 
 export const getAuthorizationURL = async () => {
   const authURL = workos.sso.getAuthorizationURL({
