@@ -20,10 +20,7 @@ const apiService = async (url, method = 'GET', options = {}) => {
   };
 
   try {
-    const apiUrl = process.env.REACT_APP_API_URL;
-    const apiUrl1 = env.REACT_APP_API_URL;
-    console.log('API URL:', apiUrl);
-    console.log('API1 URL:', apiUrl1);
+   
     const response = await fetch(url, config);
     const data = await response.json();
     if (!response.ok) {
