@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ReactDOM from "react-dom/client";
 import { useLocation } from 'react-router-dom';
-import { authenticateUser } from './workosService';
+
 
 import App from "./App";
 import { Provider } from "react-redux";
